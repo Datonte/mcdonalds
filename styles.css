@@ -145,6 +145,9 @@ nav a {
     max-width: none;
     /* Ensure no gaps */
     display: block;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
 }
 
 @keyframes scroll {
@@ -297,4 +300,85 @@ footer {
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    nav ul {
+        width: max-content;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .nav-btn,
+    .ca-box {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        white-space: nowrap;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 2rem 1rem;
+        min-height: 400px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Search */
+    .search-container {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    /* Job Grid */
+    .jobs-section {
+        padding: 0 1rem;
+        margin: 2rem auto;
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    html {
+        scroll-padding-top: 180px;
+    }
 }
