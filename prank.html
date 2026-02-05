@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Status</title>
+    <link rel="icon" href="McDonalds-Logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .prank-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .status-box {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1.prank-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--mcd-black);
+        }
+
+        .emoji {
+            font-size: 8rem;
+            display: block;
+            margin: 20px 0;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="McDonalds-Logo.png" alt="McDonald's Logo" class="mcd-logo-img">
+            <span>Careers</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Restaurant Jobs</a></li>
+                <li><a href="index.html">Corporate</a></li>
+                <li><a href="index.html">Students</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="prank-container">
+        <div class="status-box">
+            <h1 class="prank-title">boo did i scare you</h1>
+            <div class="emoji">😂</div>
+            <p class="message">We appreciate your interest! <br><small>(Just kidding, this is a prank site)</small></p>
+            <a href="index.html" class="apply-btn"
+                style="display: inline-block; width: auto; padding: 10px 30px; margin-top: 20px;">Back to Jobs</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy (Updated)</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+        <p>&copy; 2024 McDonald's. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
